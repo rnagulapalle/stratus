@@ -26,7 +26,7 @@
   Stratus.Services.Collection = [
     '$provide','$qProvider',
     function ($provide,$qProvider) {
-        $qProvider.errorOnUnhandledRejections(false);
+      $qProvider.errorOnUnhandledRejections(false);
       $provide.factory('Collection', [
         '$q',
         '$http',
