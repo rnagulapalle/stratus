@@ -17,16 +17,15 @@
     factory(root.Stratus, root._, root.angular)
   }
 }(this, function (Stratus, _, angular) {
-
   // This Collection Service handles data binding for multiple objects with the
   // $http Service
   // TODO: Build out the query-only structure here as a separate set of
   // registered collections and models
-    //RAJ Added $qProvide to handle unhandleExceptions in angular 1.6
+  // RAJ Added $qProvide to handle unhandleExceptions in angular 1.6
   Stratus.Services.Collection = [
-    '$provide','$qProvider',
-    function ($provide,$qProvider) {
-      $qProvider.errorOnUnhandledRejections(false);
+    '$provide', '$qProvider',
+    function ($provide, $qProvider) {
+      $qProvider.errorOnUnhandledRejections(false)
       $provide.factory('Collection', [
         '$q',
         '$http',
