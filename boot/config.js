@@ -12,8 +12,7 @@ boot.config({
   urlArgs: 'v=' + boot.cacheTime,
 
   // Version Location (Disabled During Beta Testing)
-  baseUrl: ((boot.dev || boot.local) ? boot.host + '/' : boot.cdn) +
-  boot.relative,
+  baseUrl: ((boot.dev || boot.local) ? boot.host + '/' : boot.cdn) + boot.relative,
   bundlePath: (boot.bundle || '') + 'stratus/',
 
   // Dependencies
@@ -220,6 +219,7 @@ boot.config({
 
     /* Stratus Core Components */
     'stratus.components.base': boot.bundle + 'stratus/components/base' + boot.suffix,
+    'stratus.components.carousel': boot.bundle + 'stratus/components/carousel' + boot.suffix,
     'stratus.components.dateTime': boot.bundle + 'stratus/components/dateTime' + boot.suffix,
     'stratus.components.delete': boot.bundle + 'stratus/components/delete' + boot.suffix,
     'stratus.components.editLegacy': boot.bundle + 'stratus/components/editLegacy' + boot.suffix,
@@ -270,6 +270,7 @@ boot.config({
     'stratus.directives.drop': boot.bundle + 'stratus/directives/drop' + boot.suffix,
     'stratus.directives.href': boot.bundle + 'stratus/directives/href' + boot.suffix,
     'stratus.directives.singleClick': boot.bundle + 'stratus/directives/singleClick' + boot.suffix,
+    'stratus.directives.onScreen': boot.bundle + 'stratus/directives/onScreen' + boot.suffix,
     'stratus.directives.src': boot.bundle + 'stratus/directives/src' + boot.suffix,
     'stratus.directives.trigger': boot.bundle + 'stratus/directives/trigger' + boot.suffix,
     'stratus.directives.validate': boot.bundle + 'stratus/directives/validate' + boot.suffix,
@@ -405,6 +406,7 @@ boot.config({
     'moment-timezone': boot.bundle + 'stratus/bower_components/moment-timezone/builds/moment-timezone-with-data' + boot.suffix,
     'moment-range': boot.bundle + 'stratus/bower_components/moment-range/dist/moment-range' + boot.suffix,
     promise: boot.bundle + 'stratus/bower_components/promise-polyfill/promise' + boot.suffix,
+    swiper: boot.bundle + 'stratus/bower_components/swiper/dist/js/swiper' + boot.suffix,
     zepto: boot.bundle + 'stratus/bower_components/zepto/zepto' + boot.suffix,
     zxcvbn: boot.bundle + 'stratus/bower_components/zxcvbn/dist/zxcvbn',
 

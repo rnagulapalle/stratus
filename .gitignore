@@ -14,12 +14,15 @@
 *~HEAD
 
 # Bower
+bower_components
 bower_components/
 
 # Node.js
 node_modules/
 package-lock.json
 npm-debug.log
+yarn.lock
+yarn-error.log
 
 # Atom Sync
 .remote-sync.json
